@@ -23,14 +23,14 @@ body {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #e41717;
+    color: #47d5f9;
 }
 
 button {
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
-    background-color: #e41717;
+    background-color: #47d5f9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
