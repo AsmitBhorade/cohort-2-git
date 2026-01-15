@@ -1,0 +1,31 @@
+U => Untracked
+M => Modified
+A => Added / Tracked
+
+to initialise local git => git init.
+
+to add a file => git add index.html.
+
+to commit changes in folder 
+=> git commit -m "Commit Name".
+Commit name is variable name which user assigns to commit.
+Imp - before commit, again run the Modified file "add code". (git add .)
+
+to push into github :-
+git remote add origin https://github.com/AsmitBhorade/cohort-2-git.git
+git branch -M main
+git push -u origin main
+[
+    git remote add is main command, origin states location of repo.
+]
+
+normal push 
+=> git push
+
+to clone the repo for 1st time in your pc from github 
+=> git clone https:/https://github.com/AsmitBhorade/cohort-2-git.git
+to pull the current changes on github by any other user 
+=> git pull
+
+to check current changes on github by any user 
+=> git log --oneline
