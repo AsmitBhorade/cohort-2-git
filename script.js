@@ -1,29 +1,41 @@
-console.log("Hello World")
+const users = [
+    {
+        fullName: "Aarav Mehta",
+        profession: "UX Designer",
+        description: "Designs apps that feel human. Loves coffee & pixel-perfect layouts.",
+        tags: ["Figma", "UI/UX", "Design Systems", "Freelancer"]
+    },
+    {
+        fullName: "Emily Carter",
+        profession: "Software Engineer",
+        description: "Writes clean code and breaks things just to fix them better.",
+        tags: ["React", "TypeScript", "Open Source", "Tech Speaker"]
+    },
+    {
+        fullName: "Aisha Khan",
+        profession: "Data Scientist",
+        description: "Finds patterns in the noise. Speaks fluently in charts and numbers.",
+        tags: ["Python", "AI", "Machine Learning", "Analytics"]
+    },
+    {
+        fullName: "Noah Williams",
+        profession: "Content Creator",
+        description: "Makes complex topics easy. Lives on caffeine and camera angles.",
+        tags: ["Video Editing", "Education", "YouTube", "Storytelling"]
+    }
+];
 
-var btn = document.querySelector("button")
-var main = document.querySelector("main")
+var sum = ''
 
-btn.addEventListener('click', function()
-{
-    console.log("Hello")
+users.forEach(function (elem) {
+    sum = sum + `<div class="card">
+            <h2>${elem.fullName}</h2>
+            <h3>${elem.profession}</h3>
+        <h5>${elem.description}</h5>
+    </div> `
 
-    var ele=document.createElement('div')
-
-    var x=Math.random()*100;
-    var y=Math.random()*100;
-
-    var c1=Math.floor(Math.random()*256)
-    var c2=Math.floor(Math.random()*256)
-    var c3=Math.floor(Math.random()*256)
-
-    ele.style.height='100px';
-    ele.style.width='100px';
-    ele.style.backgroundColor='red';
-    ele.style.position='absolute';
-    ele.style.left=x+'%';
-    ele.style.top=y+'%';
-    ele.style.backgroundColor = `rgb(${c1}, ${c2}, ${c3})`
-    console.log(ele)
-
-    main.appendChild(ele)
 })
+
+var main = document.querySelector('main')
+
+main.innerHTML = sum
